@@ -1,22 +1,22 @@
 {
-  "name": "flickr-files-namer",
+  "name": "flickr-files-renamer",
   "version": "1.0.0",
-  "description": "CLI tool for naming original photo files based on their Flickr name",
+  "description": "CLI tool for renaming original photo files based on their Flickr name",
   "keywords": [
     "flickr"
   ],
-  "homepage": "https://github.com/robatwilliams/flickr-files-namer#readme",
+  "homepage": "https://github.com/robatwilliams/flickr-files-renamer#readme",
   "bugs": {
-    "url": "https://github.com/robatwilliams/flickr-files-namer/issues"
+    "url": "https://github.com/robatwilliams/flickr-files-renamer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robatwilliams/flickr-files-namer.git"
+    "url": "https://github.com/robatwilliams/flickr-files-renamer.git"
   },
   "license": "MIT",
   "author": "Robat Williams",
   "bin": {
-    "flickr-files-namer": "bin/cli.js"
+    "flickr-files-renamer": "bin/cli.js"
   },
   "dependencies": {
     "commander": "^4.1.0",

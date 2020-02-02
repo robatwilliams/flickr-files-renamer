@@ -1,10 +1,10 @@
 <!-- prettier-ignore-start -->
-[![npm version](https://badge.fury.io/js/check-es-compat.svg)](https://badge.fury.io/js/flickr-files-namer)
+[![npm version](https://badge.fury.io/js/check-es-compat.svg)](https://badge.fury.io/js/flickr-files-renamer)
 <!-- prettier-ignore-end -->
 
-# flickr-files-namer
+# flickr-files-renamer
 
-> CLI tool for naming original photo files based on their Flickr name
+> CLI tool for renaming original photo files based on their Flickr name
 
 ## Why
 
@@ -18,7 +18,7 @@
 You'll need a [Flickr API key](https://www.flickr.com/services/api/misc.api_keys.html). For usage information, run:
 
 ```bash
-$ npx flickr-files-namer --help
+$ npx flickr-files-renamer --help
 ```
 
 It would be wise to make a copy of the original photos before running this tool.
