@@ -1,0 +1,11 @@
+{
+  // Things not supported by .editorconfig
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // See: prettier.printWidth
+  "editor.rulers": [90],
+}
