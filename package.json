@@ -1,0 +1,26 @@
+{
+  "name": "flickr-files-namer",
+  "version": "1.0.0",
+  "description": "CLI tool for naming original photo files based on their Flickr name",
+  "keywords": [
+    "flickr"
+  ],
+  "homepage": "https://github.com/robatwilliams/flickr-files-namer#readme",
+  "bugs": {
+    "url": "https://github.com/robatwilliams/flickr-files-namer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robatwilliams/flickr-files-namer.git"
+  },
+  "license": "MIT",
+  "author": "Robat Williams",
+  "bin": {
+    "flickr-files-namer": "bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^4.1.0",
+    "exif": "^0.6.0",
+    "node-fetch": "^2.6.0"
+  }
+}
