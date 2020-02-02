@@ -1,6 +1,4 @@
-<!-- prettier-ignore-start -->
 [![npm version](https://badge.fury.io/js/check-es-compat.svg)](https://badge.fury.io/js/flickr-files-renamer)
-<!-- prettier-ignore-end -->
 
 # flickr-files-renamer
 
