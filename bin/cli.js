@@ -48,7 +48,7 @@ function renameFiles(matches) {
 
 function renameFile(original, flickr) {
   const oldName = original.name;
-  const newName = flickr.title + path.extname(oldName);
+  const newName = getNewName(oldName, flickr.title);
 
   console.log(`Rename "${oldName}"   to   "${newName}"`);
 
@@ -58,6 +58,19 @@ function renameFile(original, flickr) {
 
   const newPath = path.join(program.originalsDir, newName);
   fs.renameSync(original.path, newPath);
+}
+
+function getNewName(oldNameWithExtension, flickrTitle) {
+  const extension = path.extname(oldNameWithExtension);
+  const oldName = oldNameWithExtension.slice(0, -extension.length);
+
+  const idealNewName = flickrTitle + extension;
+  const disambiguatedNewName = `${flickrTitle} (${oldName})` + extension;
+
+  // Won't detect conflicts in dry-run mode
+  const isConflict = fs.existsSync(path.join(program.originalsDir, idealNewName));
+
+  return isConflict ? disambiguatedNewName : idealNewName;
 }
 
 function matchPhotos(originals, onFlickr) {
