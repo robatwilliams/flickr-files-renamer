@@ -23,6 +23,10 @@ $ npx flickr-files-namer --help
 
 It would be wise to make a copy of the original photos before running this tool.
 
+## How it works
+
+It matches photos by their "date taken", from the files' EXIF data and the same data exposed by the Flickr API.
+
 ## Limitations
 
 User authentication is not implemented, so it only works on public sets.
